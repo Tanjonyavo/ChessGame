@@ -103,7 +103,7 @@ mvn test
 ### Clone
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ChessGame.git
+git clone https://github.com/Tanjonyavo/ChessGame.git
 cd ChessGame
 ```
 
