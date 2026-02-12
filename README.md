@@ -33,7 +33,6 @@ src/
 ---
 
 ## Screenshots
-<h2>Screenshots</h2>
 
 <p><b>Home screen – game entry menu</b></p>
 <p align="center">
