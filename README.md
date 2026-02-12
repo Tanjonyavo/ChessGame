@@ -1,6 +1,6 @@
 # ChessGame
 
-Object-oriented Java chess game implementing core chess rules.
+Object-oriented Java chess game implementing complete chess rules.
 
 This project was developed to strengthen skills in software architecture, game logic, and clean separation of concerns using a Model / Controller / App structure.
 
@@ -9,11 +9,16 @@ This project was developed to strengthen skills in software architecture, game l
 ## Key Features
 
 - Legal move validation for all chess pieces  
+- Castling (king side and queen side)  
+- En passant capture  
+- Pawn promotion  
+- Check and checkmate detection  
+- Stalemate detection  
+- Threefold repetition tracking  
 - Turn-based gameplay system  
-- Check detection logic  
+- Game timer system (Blitz / Rapid / Classic)  
 - Object-oriented implementation per piece  
 - Board and move abstraction  
-- Basic game timer system (Blitz / Rapid / Classic)
 
 ---
 
@@ -33,6 +38,8 @@ src/
 ├── Controller  – Game flow and user input handling
 └── Model       – Board, pieces, moves, and rules logic
 ```
+
+The domain logic (rules, board state, move validation) is isolated from the presentation layer to ensure maintainability and testability.
 
 ---
 
@@ -81,12 +88,16 @@ mvn test
 - Move initialization correctness  
 - Capture detection during move execution  
 - Non-capture move validation  
+- Castling validation  
+- En passant validation  
+- Pawn promotion logic  
 - Position repetition tracking (3-fold repetition counter)  
 - Piece coordinate handling and state integrity  
 
-**Check Detection**
-- King in check (positive case)  
-- King not in check (negative case)  
+**Check & Endgame Detection**
+- King in check detection  
+- Checkmate detection  
+- Stalemate detection  
 
 **Game Flow & Timer Logic**
 - Cadence selection (Blitz / Rapid / Classic)  
@@ -110,6 +121,12 @@ cd ChessGame
 ### Run
 
 Open the project with IntelliJ IDEA or Eclipse, then run `Main.java`.
+
+### Verify Maven Installation
+
+```bash
+mvn -version
+```
 
 ---
 
