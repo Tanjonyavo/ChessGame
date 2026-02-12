@@ -76,6 +76,12 @@ The domain logic (rules, board state, move validation) is isolated from the pres
 
 Tests are implemented using **JUnit 5** and executed via Maven.
 
+
+## Executable Version
+
+A ready-to-run Windows executable (.exe) is available in the **Releases** section of this repository.
+
+
 ### Run Tests
 
 ```bash
