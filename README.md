@@ -1,5 +1,5 @@
 # ChessGame
-
+![CI](https://github.com/Tanjonyavo/ChessGame/actions/workflows/ci.yml/badge.svg)
 Object-oriented Java chess game implementing complete chess rules.
 
 This project was developed to strengthen skills in software architecture, game logic, and clean separation of concerns using a Model / Controller / App structure.
